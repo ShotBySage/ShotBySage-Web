@@ -1,0 +1,237 @@
+@media (max-width: 700px) {
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+        height: 60px;
+        padding: 0 7%;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+
+    /* =========================
+       MOBILE NAVIGATION
+    ========================= */
+
+    .menu-toggle {
+        display: flex;
+        position: relative;
+        z-index: 102;
+    }
+
+    .site-nav {
+        display: none;
+
+        position: absolute;
+
+        top: 60px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 0 7% 1.2rem;
+
+        background: rgba(23, 25, 24, 0.97);
+
+        backdrop-filter: blur(8px);
+
+        border-top: 1px solid rgba(242, 241, 235, 0.08);
+    }
+
+    .site-nav.menu-open {
+        display: flex;
+    }
+
+    .site-nav a {
+        display: block;
+
+        padding: 1rem 0;
+
+        font-size: 0.8rem;
+
+        border-bottom:
+            1px solid rgba(242, 241, 235, 0.08);
+    }
+
+
+    /* =========================
+       HAMBURGER ANIMATION
+    ========================= */
+
+    .menu-toggle.menu-open span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.menu-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.menu-open span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
+    /* =========================
+       HOMEPAGE
+    ========================= */
+
+    .background-image {
+        width: 100%;
+        height: 55%;
+
+        opacity: 0.5;
+
+        background-position: center top;
+
+        -webkit-mask-image:
+            linear-gradient(
+                to bottom,
+                black 0%,
+                black 45%,
+                transparent 100%
+            );
+
+        mask-image:
+            linear-gradient(
+                to bottom,
+                black 0%,
+                black 45%,
+                transparent 100%
+            );
+    }
+
+    .landing-content {
+        padding: 100px 5% 35px;
+    }
+
+    .landing-text h1 {
+        font-size: clamp(3rem, 13vw, 5rem);
+    }
+
+    .film-options {
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .film-card {
+        width: calc((100vw - 10% - 1.2rem) / 3);
+        min-width: 0;
+    }
+
+    .film-body {
+        height: 200px;
+    }
+
+    .film-edge {
+        min-height: 24px;
+
+        font-size: 0.26rem;
+        gap: 2px;
+    }
+
+    .sprockets {
+        width: 10px;
+        padding: 2px;
+    }
+
+    .sprockets span {
+        height: 15px;
+    }
+
+    .film-label {
+        font-size: 0.42rem;
+        letter-spacing: 0.08em;
+    }
+
+
+    /* =========================
+       PORTFOLIO
+    ========================= */
+
+    .portfolio-page {
+        padding: 100px 7% 50px;
+    }
+
+    .portfolio-intro {
+        margin-bottom: 2rem;
+    }
+
+    .eyebrow {
+        margin-bottom: 1.1rem;
+    }
+
+    .portfolio-intro-content {
+        display: block;
+    }
+
+    .portfolio-intro h1 {
+        font-size: 2.8rem;
+    }
+
+    .portfolio-intro-text {
+        margin: 1rem 0 0;
+    }
+
+    .portfolio-list {
+        gap: 1.8rem;
+    }
+
+    .portfolio-feature,
+    .portfolio-feature.reverse {
+        height: auto;
+        min-height: 0;
+
+        flex-direction: column;
+    }
+
+    .feature-image {
+        width: 100%;
+        height: 210px;
+    }
+
+    .feature-image::after,
+    .portfolio-feature.reverse .feature-image::after {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: auto;
+
+        width: 100%;
+        height: 35%;
+
+        background:
+            linear-gradient(
+                to bottom,
+                transparent,
+                #171918
+            );
+    }
+
+    .feature-text,
+    .portfolio-feature.reverse .feature-text {
+        padding: 0.4rem 0 0;
+
+        text-align: left;
+
+        align-items: flex-start;
+    }
+
+    .feature-number {
+        margin-bottom: 0.45rem;
+    }
+
+    .feature-text h2 {
+        margin-bottom: 0.4rem;
+
+        font-size: 2rem;
+    }
+}

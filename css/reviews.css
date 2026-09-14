@@ -1,0 +1,318 @@
+/* =========================
+   REVIEWS PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+
+    color: #f2f1eb;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 7%;
+}
+
+.logo {
+    color: #f2f1eb;
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #f2f1eb;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.reviews-page {
+    width: min(1200px, 86%);
+
+    margin: 0 auto;
+
+    padding-bottom: 100px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.reviews-intro {
+    padding: 80px 0 55px;
+}
+
+.reviews-intro h1 {
+    margin: 0;
+
+    font-size: clamp(3rem, 7vw, 6rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.05em;
+}
+
+.reviews-intro-text {
+    margin: 22px 0 0;
+
+    color: #aaa9a3;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   REVIEW GRID
+========================= */
+
+.reviews-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================
+   REVIEW CARD
+========================= */
+
+.review-card {
+    min-height: 210px;
+
+    padding: 24px;
+
+    border: 1px solid #333;
+
+    background: #111210;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #93a88d;
+
+    background: #151715;
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.review-stars {
+    color: #93a88d;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================
+   REVIEW TEXT
+========================= */
+
+.review-text {
+    margin: 24px 0;
+
+    font-size: 1rem;
+
+    line-height: 1.6;
+
+    color: #f2f1eb;
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.review-name {
+    margin-top: auto;
+
+    color: #888782;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.reviews-loading {
+    color: #aaa9a3;
+}
+
+
+/* =========================
+   LEAVE A REVIEW
+========================= */
+
+.leave-review {
+    margin-top: 80px;
+
+    padding-top: 50px;
+
+    border-top: 1px solid #333;
+}
+
+.leave-review h2 {
+    margin: 0;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.05em;
+}
+
+.leave-review p {
+    margin: 18px 0 28px;
+
+    color: #aaa9a3;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.review-button {
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    border: 1px solid #f2f1eb;
+
+    color: #f2f1eb;
+
+    text-decoration: none;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.review-button:hover {
+    background: #f2f1eb;
+
+    color: #171918;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 25px 7%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+
+    /* INTRO */
+
+    .reviews-intro {
+        padding: 55px 0 45px;
+    }
+
+
+    /* REVIEWS */
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .review-card {
+        min-height: 0;
+
+        padding: 22px;
+    }
+
+    .review-text {
+        margin: 20px 0;
+
+        font-size: 0.95rem;
+    }
+
+
+    /* LEAVE REVIEW */
+
+    .leave-review {
+        margin-top: 60px;
+
+        padding-top: 40px;
+    }
+
+}

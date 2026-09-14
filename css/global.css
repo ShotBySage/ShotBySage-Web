@@ -1,0 +1,30 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background:
+        linear-gradient(
+            rgba(23, 25, 24, 0.90),
+            rgba(23, 25, 24, 0.96)
+        ),
+        url("../images/webpage/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #f2f1eb;
+    font-family: Arial, sans-serif;
+}
