@@ -119,37 +119,37 @@
 
     .film-options {
         width: 100%;
-        gap: 0.6rem;
+        gap: 0.8rem;
     }
 
     .film-card {
-        width: calc((100vw - 10% - 1.2rem) / 3);
+        width: calc((100vw - 10% - 1.6rem) / 3);
         min-width: 0;
     }
 
     .film-body {
-        height: 200px;
+        height: 210px;
     }
 
     .film-edge {
-        min-height: 24px;
+        min-height: 26px;
 
-        font-size: 0.26rem;
-        gap: 2px;
+        font-size: 0.31rem;
+        gap: 3px;
     }
 
     .sprockets {
-        width: 10px;
+        width: 11px;
         padding: 2px;
     }
 
     .sprockets span {
-        height: 15px;
+        height: 16px;
     }
 
     .film-label {
-        font-size: 0.42rem;
-        letter-spacing: 0.08em;
+        font-size: 0.48rem;
+        letter-spacing: 0.09em;
     }
 
 
